@@ -27,6 +27,13 @@ Ensure your system includes the required development dependencies:
 sudo pacman -S rustup gtk4 libadwaita
 
 ```
+### Fedora Linux
+
+```bash
+sudo dnf install gtk4-devel libadwaita-devel
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+```
 
 ### Ubuntu / Debian
 
