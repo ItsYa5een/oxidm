@@ -6,12 +6,18 @@ pub enum DownloadError {
     Network(#[from] reqwest::Error),
     #[error("I/O error: {0}")]
     Io(#[from] std::io::Error),
-    #[error("Server does not support range requests")]
+    #[error("Server ignored the Range header")]
     RangeNotSupported,
     #[error("Invalid URL: {0}")]
     InvalidUrl(String),
-    #[error("Failed to extract content length from server")]
-    MissingContentLength,
+    #[error("Server answered with HTTP status {0}")]
+    HttpStatus(u16),
+    #[error("Connection stalled (no data received)")]
+    Timeout,
+    #[error("Download ended before all bytes arrived")]
+    Incomplete,
     #[error("Download paused by user")]
     Paused,
+    #[error("Worker task failed: {0}")]
+    Worker(String),
 }
