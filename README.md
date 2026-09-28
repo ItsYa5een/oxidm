@@ -10,6 +10,25 @@ A fast, modern, multi-threaded download manager written in Rust, GTK4, and Libad
 * **Task Management:** Full control over downloads with pause, resume, and queue ordering.
 * **Resource Efficient:** Low CPU and memory footprint enabled by Rust.
 
+## Planned Features
+- [ ] **Engine & Protocol Core**
+  - [ ] Multi-protocol support (FTP, SFTP, BitTorrent, Magnet links)
+  - [ ] Dynamic adaptive multi-segment streaming and mirror sources
+  - [ ] Proxy, VPN, and credential manager integration
+
+- [ ] **Management & Scheduling**
+  - [ ] Global and per-download bandwidth throttling
+  - [ ] Advanced queues, priority sorting, and time-based scheduler
+  - [ ] Sequential downloading for live media preview
+  - [ ] Automatic extension-based file categorization and batch downloading
+
+- [ ] **Browser & System Integration**
+  - [ ] Native browser extensions (Chrome, Firefox, Edge) with media sniffing
+  - [ ] Clipboard link monitoring and browser cookie sync
+  - [ ] Post-download checksum verification (MD5/SHA) and auto-extraction
+  - [ ] System tray integration, floating drop target, and power management
+
+
 ## Tech Stack
 
 * **Language:** Rust
