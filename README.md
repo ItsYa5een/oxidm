@@ -41,6 +41,47 @@ sudo apt update
 sudo apt install build-essential libgtk-4-dev libadwaita-1-dev
 
 ```
+### openSUSE
+
+```bash
+sudo zypper install rustup gtk4-devel libadwaita-devel
+
+```
+### Gentoo
+
+```bash
+sudo emerge --ask dev-util/rustup gui-libs/gtk gui-libs/libadwaita
+
+```
+### Void Linux
+
+```bash
+sudo xbps-install -S rustup gtk4-devel libadwaita-devel
+
+```
+### Alpine Linux
+
+```bash
+sudo apk add rustup gtk4.0-dev libadwaita-dev
+
+```
+### NixOS
+
+```bash
+nix-env -iA nixpkgs.rustup nixpkgs.gtk4 nixpkgs.libadwaita
+
+```
+Alternatively, add them directly to configuration.nix:
+
+```bash
+environment.systemPackages = with pkgs; [
+  rustup
+  gtk4
+  libadwaita
+];
+
+```
+
 
 ## Installation & Building
 
