@@ -40,7 +40,7 @@ sudo apt install build-essential libgtk-4-dev libadwaita-1-dev
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/YOUR_GITHUB_USERNAME/oxidown.git
+git clone https://github.com/ItsYa5een/oxidown.git
 cd oxidown
 
 ```
