@@ -21,7 +21,7 @@ A fast, modern, multi-threaded download manager written in Rust, GTK4, and Libad
 
 Ensure your system includes the required development dependencies:
 
-### Arch Linux / CachyOS
+### Arch Linux
 
 ```bash
 sudo pacman -S rustup gtk4 libadwaita
